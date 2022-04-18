@@ -69,6 +69,8 @@ hr {
 	clear: both;
 }
 
+/*index.html*/
+
 /*Selection block*/
 
 ::selection{
@@ -157,18 +159,33 @@ input[type=text].field:focus {
 	width: 80%;
 	margin-left: 10%;
 }
- 
+
 .wrapper .articles article {
 	float: left;
-	width: 31.3%;
 	border: 1px solid silver;
 	box-sizing: border-box;
 	border-radius: 15px;
 	background-color: #fdfdfd;
 	margin-right: 2%;
-	min-height: 600px;
 	margin-bottom: 10px;
-}
+	}
+ 
+@media (min-width: 900px) {
+.wrapper .articles article {
+	width: 31.3%;
+	min-height: 600px;
+}}
+
+@media (max-width: 899px) and (min-width: 700px){
+.wrapper .articles article {
+	width: 80%;
+	margin-left: 45px;
+}}
+
+@media (max-width: 699px) {
+.wrapper .articles article {
+	width: 100%;
+}}
 
 .wrapper .articles article img {
 	width: 100%;
@@ -179,8 +196,8 @@ input[type=text].field:focus {
 }
 
 .wrapper .articles article:hover {
-	transition: all.3s ease;
-	border: 1.2px solid #4cbd14;
+	transition: all.4s ease;
+	border: 2px solid #4cbd14;
 }
 
 .wrapper .articles article h2 {
@@ -221,6 +238,7 @@ input[type=text].field:focus {
 	text-align: center;
 	padding: 1%;
 	height: 100px;
+	max-width: 98%;
 }
 
 /* Стили для footer */
@@ -242,4 +260,74 @@ footer, .page-wrap:after {height: 7px;}
 .page-wrap {
 	min-height: 91%;
 	margin-bottom: -10px;
+}
+
+/*about.html*/
+
+.about_us{
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	background-color: #fedada;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+/*feedback.html*/
+
+form {
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+}
+
+form input {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-left: 175px;
+	float: left;
+	clear:  both;
+	padding: 10px;
+	width: 40%;	
+	margin-bottom: 7px;
+}
+
+form input:focus, form textarea:focus, form #send:focus{
+	border: 2px solid #4cbd14;
+}
+
+form label {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	margin-left: 7px;
+}
+
+form textarea {
+	width: 60%;
+	float: left;
+	clear: both;
+	margin-left: 125px;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	font-size: 1.1em;
+}
+
+form #send {
+	float: left;
+	padding: 10px;
+	margin-left: 188px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 1em;
+	cursor: pointer;
+
+}
+
+ form #send:hover {
+	transition: all.3s ease;
+	border: 2px solid #4cbd14;
 }
