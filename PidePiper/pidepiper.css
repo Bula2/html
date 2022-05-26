@@ -1,0 +1,208 @@
+/*Main part*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Header*/
+
+header {
+    float: left;
+    background-color: #007765;
+    width: 99.4%;
+    padding: 0.3%;
+    height: 60px;
+}
+
+header>figure#logo {
+    float: left;
+    margin-left: 20%;
+    margin-top: 1.2%;
+}
+
+header>figure#logo>img {
+    width: 128px;
+}
+
+header>div#header_menu{
+    float: right;
+    margin-right: 10%;
+    margin-top: 1.4%;
+
+}
+
+/*Footer*/
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content{
+    flex: 1 0 auto;
+}
+footer{
+    width: 99.4%;
+    display: flex;
+    justify-content: center;
+    padding: 0.3%;
+    height: 100px;
+    background-color: #333333;
+}
+footer>p#footer_text{
+    color: white;
+    text-align: center;
+    width: 27%;
+    font-size: 0.8em;
+    margin: 1.8% auto ;
+}
+
+/*Main Part 1*/
+
+#under_header{
+    height: 260px;
+    background-image: url("images/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#under_header_text{
+    text-align: center;
+    color: white;
+    font-family: Roboto, sans-serif;
+    padding-top: 11%;
+    font-size: 2.6em;
+}
+
+/*Main Part 2*/
+
+#div_the_problem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 40px auto;
+}
+#div_the_problem>h1{
+    text-align: center;
+    color: #007765;
+    font-size: 2.4em;
+}
+
+#div_the_problem>p{
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+/*Main Part 3*/
+
+#div_blue_background{
+    height: 260px;
+    background-image: url("images/image2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#div_blue_background>p{
+    text-align: center;
+    color: white;
+    width: 42%;
+    font-size: 1.7em;
+    font-style: oblique;
+    margin-top: 6%;
+}
+
+/*Main Part 4*/
+
+#div_pp_coin{
+    font-size: 1.1em;
+}
+
+#div_pp_coin>h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.9em;
+    color: #007765;
+}
+
+#div_pp_coin>#PPC_img_text{
+    display: flex;
+    justify-content: center;
+    margin: 12px auto;
+    width: 45%
+}
+
+#div_pp_coin>div#PPC_img_text>img{
+    width:70px;
+    height: 70px;
+}
+
+#div_pp_coin>div#PPC_img_text>p{
+    margin-left: 20px;
+}
+
+#div_pp_coin>p{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 20px auto;
+}
+
+/*Main Part 5*/
+
+#div_the_team{
+    background-color: #EEEEEE;
+    padding-bottom: 40px;
+}
+
+#div_the_team>h1{
+    display: grid;
+    place-content: center;
+    margin: 40px auto;
+    padding-top: 40px;
+    font-size: 2.4em;
+    color: #007765;
+}
+
+#div_the_team>div.div_the_team_photo{
+    display: flex;
+    place-content: center;
+}
+
+#div_the_team>div.div_the_team_photo>figure>img{
+    width: 120px;
+}
+
+#div_the_team>div.div_the_team_photo>figure{
+    margin: auto 60px;
+}
+
+#div_the_team>div.div_the_team_photo>figure>figcaption>span>b {
+    color: #007765;
+    display: flex;
+    place-content: center;
+}
+#div_the_team>div.div_the_team_photo>figure>figcaption>span.span_team_photo{
+    font-size: 0.7em;
+    display: flex;
+    place-content: center;
+    font-style: oblique;
+}
+
+#div_the_team>div.div_the_team_photo>figure>img:first-child{
+    padding-left: 10px;
+}
+
