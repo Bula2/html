@@ -58,7 +58,7 @@ footer{
     justify-content: center;
     padding: 0.3%;
     height: 100px;
-    background-color: #333333;
+    background-color: black;
 }
 footer>p#footer_text{
     color: white;
@@ -205,4 +205,18 @@ footer>p#footer_text{
 #div_the_team>div.div_the_team_photo>figure>img:first-child{
     padding-left: 10px;
 }
+
+/*Main Part 5*/
+
+div.gif{
+    background-color: black;
+    display: flex;
+    place-content: center;
+}
+
+div.gif>img{
+    width: 90px;
+    margin: 20px auto 0;
+}
+
 
