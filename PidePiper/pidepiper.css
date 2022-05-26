@@ -55,17 +55,25 @@ header>div#header_menu{
 footer{
     width: 99.4%;
     display: flex;
-    justify-content: center;
+    place-content: center;
     padding: 0.3%;
-    height: 100px;
+    height: 200px;
     background-color: black;
 }
-footer>p#footer_text{
+
+footer>div.gif>img{
+    display: flex;
+    place-content: center;
+    width: 90px;
+    margin: 20px auto 0;
+}
+
+footer>div.gif>p#footer_text{
     color: white;
     text-align: center;
-    width: 27%;
+    width: 30%;
     font-size: 0.8em;
-    margin: 1.8% auto ;
+    margin:  20px auto 10px ;
 }
 
 /*Main Part 1*/
@@ -206,17 +214,6 @@ footer>p#footer_text{
     padding-left: 10px;
 }
 
-/*Main Part 5*/
 
-div.gif{
-    background-color: black;
-    display: flex;
-    place-content: center;
-}
-
-div.gif>img{
-    width: 90px;
-    margin: 20px auto 0;
-}
 
 
