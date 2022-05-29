@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+
+.my-navbar-link{
+    font-size: 0.9em;
+}
+
+.my-navbar-brand{
+    margin-left: 10px;
+}
+
+.my-jumbotron{
+    background-color: #E9ECEF;
+    padding: 50px;
+}
+
+.my-jumbotron>div>div>div>p{
+    font-size: 1em;
+    width: 50%;
+}
+
+.my-cards{
+    margin: 40px;
+}
+ .my-table{
+     width: 92.8%;
+     margin: 50px auto;
+ }
