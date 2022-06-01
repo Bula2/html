@@ -1,0 +1,170 @@
+#main{
+    float: left;
+    margin-top: 20px;
+}
+
+aside{
+    float: left;
+    margin-left: 2%;
+}
+
+#products{
+    float: left;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.product{
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 1.1em;
+}
+
+.product>img{
+    border: 2px solid #c7cace;
+    border-radius: 5px;
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
+.product>span{
+    float: left;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#products>a>div.btn{
+    float: left;
+}
+
+#one_product{
+    float: left;
+    margin-top: 20px;
+    width: 60%;
+}
+
+#one_product>img{
+    width: 80%;
+    float: left;
+}
+
+.heading{
+    font-weight: lighter;
+    font-size: 1.3em;
+    font-family: 'Bradley Hand', cursive;
+    border-bottom: 1.5px solid #01b7d7;
+    color: black;
+    padding: 0px 2px;
+    float: left;
+}
+
+.heading:first-letter{
+    color: #01b7d7;
+}
+
+#news{
+    float: left;
+}
+
+.article{
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    border: 1px solid  #c7cace;
+    background: #c7cace;
+    box-sizing: border-box;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.article>img{
+    border-radius:5px 5px 0 0;
+    width: 100%;
+}
+
+.article>span{
+    font-family: 'Bradley Hand', cursive;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 5px 10%;
+    float: left;
+    text-align: center;
+}
+
+#news>a>div.btn{
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 29%;
+}
+
+@media (min-width: 1051px) {
+    #main{
+        width: 60%;
+        margin-left: 3%;
+    }
+
+    aside{
+        width: 32%;
+        margin-left: 2%;
+    }
+
+    #news{
+        margin-left: 10%;
+        width: 90%;
+    }
+
+}
+@media (max-width: 1050px) and (min-width: 911px){
+    #main{
+        width: 65%;
+        margin-left: 2%;
+    }
+
+    aside{
+        width: 32%;
+        margin-left: 2%;
+    }
+
+    #news{
+        margin-left: 4%;
+        width: 96%;
+    }
+}
+
+@media (max-width: 910px) and (min-width: 501px){
+    #main{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    aside{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #news{
+        margin-left: 4%;
+        width: 96%;
+    }
+}
+
+@media (max-width: 500px){
+    #main{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    aside{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #news{
+        margin-left: 4%;
+        width: 96%;
+    }
+}
