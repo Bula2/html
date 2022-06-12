@@ -51,7 +51,7 @@ aside{
 }
 
 #products>a:hover>div.btn_body{
-   font-size: 1.12em;
+    font-size: 1.12em;
 }
 
 #one_product{
@@ -83,51 +83,6 @@ aside{
 
 #news{
     float: left;
-}
-
-.article{
-    width: 40%;
-    float: left;
-    margin-right: 10%;
-    margin-bottom: 30px;
-    border: 1.2px solid black;
-    background: #c7cace;
-    box-sizing: border-box;
-    max-width: 500px;
-    border-radius: 6px;
-}
-
-.article>img{
-    border-radius:6px 6px 0 0;
-    width: 100%;
-}
-
-.article>span{
-    font-family: 'Bradley Hand', cursive;
-    font-size: 1.2em;
-    width: 80%;
-    margin: 5px 10%;
-    float: left;
-    text-align: center;
-}
-
-#news>a>div.btn_body{
-    color: rgb(0, 0, 0);
-    float: left;
-    margin-left: 31%;
-    margin-top: 0.9%;
-    margin-bottom: 0.9%;
-    border-radius: 8px;
-    padding: 5px 9px;
-    font-size: 1.1em;
-    font-family: 'Bradley Hand', cursive;
-    background-color: #c6c9cd;
-    border: 2px solid #1e1b1b;
-    transition: all .4s ease;
-}
-
-#news>a:hover>div.btn_body{
-    font-size: 1.12em;
 }
 
 @media (min-width: 1051px) {
@@ -198,8 +153,43 @@ aside{
     }
 }
 
-/*Нижняя часть main*/
+/*Уникальный дизайн*/
+.uniq-block>ul>li{
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
 
+ .uniq-block li {
+    color: #01b7d7; /* Цвет маркеров */
+}
+ .uniq-block li span {
+    color: black; /* Цвет текста */
+}
+
+.uniq-block>strong{
+    font-size: 1.2em;
+}
+
+.order-button{
+    width: 190px;
+    color: rgb(0, 0, 0);
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 5px 9px;
+    font-size: 1.1em;
+    font-family: 'Bradley Hand', cursive;
+    background-color: #c6c9cd;
+    border: 2px solid #1e1b1b;
+    transition: all .4s ease;
+}
+
+.order-button:hover{
+    font-size: 1.14em;
+}
+
+/*Конец страницы*/
 .end-main{
     width: 100%;
     background: #000000;

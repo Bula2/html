@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechWear</title>
+    <title>Уникальный дизайн / TechWear</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/main-page.css">
     <link rel="stylesheet" href="style/aside.css">
     <meta name="description" content="одежда">
     <meta name="keywords" content="одежда, техвир, techwear">
@@ -22,36 +21,35 @@
 
         <div id="main">
             <div id="news">
-                <h2 class="heading">Новости</h2>
+                <h2 class="heading">Уникальный дизайн</h2>
                 <div style="clear: both"><br></div>
-
-                <!--Статья-->
-
-                <?php
-                for ($i = 0; $i < 6; $i++)
-                    echo '<div class="article">
-                                    <img src="img/style.jpg" alt="style" title="style">
-                                    <span>Techwear – это одежда будущего для повседневной жизни</span>
-                                </div>'
-                ?>
-                <a href="" title="Посмотреть больше">
-                    <div class="btn_body">
-                        Посмотреть больше
-                    </div>
-                </a>
+                <div class="uniq-block">
+                    <strong>Создай своё будущее сам</strong>
+                    <div style="clear: both"><br></div>
+                    <ul>
+                        <li><span>Выбери свой аксессуар или одежду</span></li>
+                        <li><span>Задай ей свой цвет и уникальный образ</span></li>
+                        <li><span>Выбери нужные тебе тех-добавки</span></li>
+                        <li><span>Не забудь подобрать размер</span></li>
+                    </ul>
+                    <input class="order-button" type="button" value="Заказать">
+                </div>
             </div>
         </div>
+
         <?
         require_once "blocks/aside.php"
         ?>
+
         <div style="clear: both"><br></div>
         <div class="end-main"><img src="img/end_main.png" alt="end"></div>
 
     </div>
+
+
     <?
     require_once "blocks/footer.php"
     ?>
-
 </div>
 <!--jQuerry-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

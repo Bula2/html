@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechWear</title>
+    <title>Обратная связь / TechWear</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/main-page.css">
     <link rel="stylesheet" href="style/aside.css">
+    <link rel="stylesheet" href="style/form.css">
     <meta name="description" content="одежда">
     <meta name="keywords" content="одежда, техвир, techwear">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,39 +22,41 @@
 
         <div id="main">
             <div id="news">
-                <h2 class="heading">Новости</h2>
+                <h2 class="heading">Обратная связь</h2>
                 <div style="clear: both"><br></div>
-
-                <!--Статья-->
-
-                <?php
-                for ($i = 0; $i < 6; $i++)
-                    echo '<div class="article">
-                                    <img src="img/style.jpg" alt="style" title="style">
-                                    <span>Techwear – это одежда будущего для повседневной жизни</span>
-                                </div>'
-                ?>
-                <a href="" title="Посмотреть больше">
-                    <div class="btn_body">
-                        Посмотреть больше
-                    </div>
-                </a>
+                <div class="feedback">
+                    <strong>Чтобы отправить нам сообщение, заполните форму ниже:</strong>
+                    <form>
+                        <div>
+                            <input type="text" id="name" placeholder="Имя" onclick="$(this).css('border-color', '#171616')">
+                            <input type="email" id="email" placeholder="Электронная почта" onclick="$(this).css('border-color', '#171616')">
+                        </div>
+                        <div>
+                            <textarea id="message" placeholder="Сообщение" onclick="$(this).css('border-color', '#171616')"></textarea>
+                        </div>
+                        <input type="button" class="order-button" id="send" value="Отправить">
+                    </form>
+                </div>
             </div>
         </div>
+
         <?
         require_once "blocks/aside.php"
         ?>
+
         <div style="clear: both"><br></div>
         <div class="end-main"><img src="img/end_main.png" alt="end"></div>
 
     </div>
+
+
     <?
     require_once "blocks/footer.php"
     ?>
-
 </div>
 <!--jQuerry-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>
