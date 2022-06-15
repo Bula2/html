@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+body, html {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+/*Header*/
+
+header{
+    height: 72px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 5px solid #E0E0E0;
+    font-family: Andale Mono, monospace;
+}
+
+.logo a{
+    font-size: 1.4em;
+    float: left;
+    margin: 22px auto 40px 125px;
+    letter-spacing: 0.2em;
+}
+
+
+.logo .uber{
+    color: black;
+    font-weight: bold;
+}
+
+.logo .eats{
+    color: #57AD56;
+}
+
+.header_login{
+    float: right;
+    margin: 18px 130px 30px auto;
+}
+
+.header_login>a>input{
+    width: 85px;
+    height: 38px;
+    background-color: white;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header_login>a>input:hover{
+    border: 3px solid #E0E0E0;
+}
+
+.header_login>a{
+    font-size: 1.4em;
+    color: #57AD56;
+}
+
+.header_login>a:hover{
+    transition: all.6s ease;
+    font-size: 1.5em;
+}
+
+/*Main Part*/
+
+.search_title{
+    width: 75%;
+    border: none;
+    outline:none;
+    border-bottom: 3px solid #E0E0E0;
+    margin: 60px 12.5%;
+    color: #626262;
+    opacity: .5;
+    font-size: 1em;
+}
+
+
+
+.rest_menu>h2{
+    margin-left: 11.5%;
+    color: #151414;
+    margin-bottom: 1%;
+    font-size: 1.35em;
+    opacity: 0.8;
+}
+
+.menu{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.point{
+    margin: 1.2% 0.5%;
+}
+
+.point>img{
+    width:96%;
+    border-radius: 3px;
+}
+
+.point>h3, .point>h3>a{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #232222;
+    opacity: 0.9;
+    font-size: 1em;
+}
+
+.point>h3>a:hover{
+    color:black;
+}
+
+.point>div.price{
+    color: #626262;
+    opacity: .5;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+.point>div.time{
+    font-size: 0.85em;
+    padding-top: 8px;
+    margin-left: 4px;
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 8%;
+    width: 100%;
+    background-color: #262626;
+}
+
+.footer_logo{
+    width: 80%;
+    letter-spacing: 0.2em;
+    font-size: 1.65em;
+    margin: 40px 0 40px 120px;
+}
+
+.footer_uber{
+    color: whitesmoke;
+}
+
+.footer_eats{
+    color: #57AD56;
+}
+
+.footer_line{
+    width: 81%;
+    border-bottom: 1px solid whitesmoke;
+    margin: auto;
+}
+
+.footer_md_menu{
+    margin: 25px 0;
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang_change{
+    background-color: #414040;
+    color: whitesmoke;
+    font-size: 0.9em;
+    width: 230px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.footer_first_col{
+    font-size: 0.9em;
+    color: whitesmoke;
+    margin: 20px 0 40px 120px;
+}
+
+.footer_first_col>div>span{
+    color: #57AD56;
+}
+
+.footer_first_col>.social_network>a>i{
+    color: whitesmoke;
+    margin: 0 4px;
+    font-size: 1.2em;
+}
+
+.footer_second_col>a>p{
+    color: whitesmoke;
+    font-size: 0.85em;
+    margin-top: 30px;
+}
+
+.footer_third_col>a>p{
+    color: whitesmoke;
+    font-size: 0.85em;
+    margin-top: 30px;
+}
+
+.download_links{
+    display: flex;
+    justify-content: center;
+}
+
+.download_links>a>img{
+    margin: 50px 10px;
+    width: 130px;
+    height: 40px;
+}
+
+.footer_end{
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 0.6em;
+    margin: 30px auto;
+}
+
+.footer_end>button{
+    width: 80px;
+    height: 80px;
+    font-size: 1.4em;
+    background-color: #57AD56;
+    border:none;
+    margin-top: -50px;
+}
+
+.footer_end>button>span{
+    font-size: 3em;
+}
+
