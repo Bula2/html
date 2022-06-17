@@ -18,13 +18,24 @@
 <body>
 <div class="wrapper">
     <div class="content">
-        <header>
+        <header id="top">
             <div class="logo">
                 <a href="index.html"><span class="uber">UBER</span><span class="eats">EATS</span></a>
             </div>
             <div class="header_login">
                 <a href="index.html"><input type="button" value="Войти"></a>
-                <a href="index.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="dropdown">
+                    <button onclick="basketDrop()" class="basket"><i class="fa-solid fa-bag-shopping basket"></i></button>
+                    <div id="myDropdown" class="dropdown-basket">
+                        <h3>Заказ</h3>
+                        <ul id="elem_in_order">
+                        </ul>
+                        <div id="clean_or_order" class="clean_or_order">
+                        <button onclick="basketClean()">Очистить</button>
+                        <button onclick="basketOrder()">Заказать</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -44,47 +55,59 @@
 
         <div class="pushkin_main">
             <h2>Закуски</h2>
-            <div class="row pushkin_menu">
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+            <div id="pushkin_menu" class="row pushkin_menu">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/13.png" alt="">
                     <h3><a href="#">Сельд на бородинском хлебе</a></h3>
                     <p class="p_rec">С яйцом и огурцом</p>
                     <p class="p_price">240 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 0)" value="Сельд на бородинском хлебе">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
 
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/14.png" alt="">
                     <h3><a href="#">Соленья ассорти</a></h3>
                     <p class="p_rec">Лучшие овощи с кухни</p>
                     <p class="p_price">320 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 1)" value="Соленья ассорти">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
 
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/15.png" alt="">
                     <h3><a href="#">Грибы маринованные</a></h3>
                     <p class="p_rec">Прямо из леса</p>
                     <p class="p_price">300 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 2)" value="Грибы маринованные">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
 
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/16.png" alt="">
                     <h3><a href="#">Сало домашнее с горчицей</a></h3>
                     <p class="p_rec">Домашней чем дома</p>
                     <p class="p_price">320 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 3)" value="Сало домашнее с горчицей">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
 
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/17.png" alt="">
                     <h3><a href="#">Малосольная семга</a></h3>
                     <p class="p_rec">Только поймали и сразу к вам</p>
                     <p class="p_price">390 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 4)" value="Малосольная семга">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
 
-                <div class="p_point col-xs-11 col-sm-11 col-md-11 col-lg-5">
+                <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/18.png" alt="">
                     <h3><a href="#">Язык говяжий с хреном</a></h3>
                     <p class="p_rec">Видимо много болтал</p>
                     <p class="p_price">350 ₽</p>
+                    <button class="add-to-basket" onclick="addToOrder(this.value, 5)" value="Язык говяжий с хреном">Добавить в заказ</button>
+                    <p class="addSuccess">Блюдо добавлено в корзину</p>
                 </div>
             </div>
         </div>
@@ -143,7 +166,7 @@
             <p>© 2017 Uber Technologies Inc.</p>
             <p>Обработка персональных данных</p>
             <p>Пользовательское соглашение</p>
-            <button><span>&#8593;</span></button>
+            <a href="#top"><button><span>&#8593;</span></button></a>
         </div>
     </footer>
 </div>

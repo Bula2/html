@@ -6,7 +6,9 @@
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
-input::-webkit-search-results-decoration { display: none; }
+input::-webkit-search-results-decoration {
+    display: none;
+}
 
 body, html {
     width: 100%;
@@ -17,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -27,13 +29,13 @@ a:hover{
     height: 100%;
 }
 
-.content{
+.content {
     flex: 1 0 auto;
 }
 
 /*Header*/
 
-header{
+header {
     height: 72px;
     width: 100%;
     background-color: white;
@@ -41,7 +43,7 @@ header{
     font-family: Andale Mono, monospace;
 }
 
-.logo a{
+.logo a {
     font-size: 1.4em;
     float: left;
     margin: 22px auto 40px 125px;
@@ -49,21 +51,21 @@ header{
 }
 
 
-.logo .uber{
+.logo .uber {
     color: black;
     font-weight: bold;
 }
 
-.logo .eats{
+.logo .eats {
     color: #57AD56;
 }
 
-.header_login{
+.header_login {
     float: right;
     margin: 18px 130px 30px auto;
 }
 
-.header_login>a>input{
+.header_login a > input {
     width: 85px;
     height: 38px;
     background-color: white;
@@ -74,33 +76,95 @@ header{
     cursor: pointer;
 }
 
-.header_login>a>input:hover{
+.header_login a > input:hover {
     border: 3px solid #E0E0E0;
 }
 
-.header_login>a{
+.header_login button.basket {
     font-size: 1.4em;
     color: #57AD56;
+    background-color: white;
+    border: none;
 }
 
-.header_login>a:hover{
-    transition: all.6s ease;
+.header_login button.basket:hover {
+    transition: all .6s ease;
     font-size: 1.5em;
 }
 
-@media (max-width: 735px){
-    .header_login i{
-        display:none;
-    }
+/*Выпадающее меню*/
 
-    .header_login>a>input{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-basket {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 275px;
+    min-height: 50px;
+    margin-left: -135px;
+    margin-top: 20px;
+    z-index: 1;
+    border: 1px solid #57AD56;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-basket > h3 {
+    margin: 2px 0 2px 115px;
+}
+
+.dropdown-basket > ul {
+    margin-left: 30px;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.clean_or_order{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.clean_or_order>button{
+    margin-right: 10px;
+    width: 80px;
+    border-radius: 6px;
+    background: #efefef;
+    border: 1.5px solid silver;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.clean_or_order>button:hover{
+    border: 1.5px solid #57AD56;
+}
+
+/*Media header*/
+
+@media (max-width: 735px) {
+    /*.header_login i {*/
+    /*    display: none;*/
+    /*}*/
+
+    .header_login > a > input {
         float: right;
-        margin-left:0;
+        margin-left: 0;
         margin-right: -100px;
         width: 60px;
     }
 
-    .logo>a{
+    .logo > a {
         float: left;
         margin-right: -50px;
         margin-left: 5%;
@@ -108,18 +172,19 @@ header{
     }
 }
 
-@media (max-width: 196px){
-    .header_login{
+@media (max-width: 255px) {
+    .header_login {
         display: none;
     }
 }
 
+
 /*Main Part*/
 
-.search_title{
+.search_title {
     width: 75%;
     border: none;
-    outline:none;
+    outline: none;
     border-bottom: 3px solid #E0E0E0;
     margin: 60px 12.5%;
     color: #626262;
@@ -127,9 +192,7 @@ header{
     font-size: 1em;
 }
 
-
-
-.rest_menu>h2{
+.rest_menu > h2 {
     margin-left: 11.5%;
     color: #151414;
     margin-bottom: 1%;
@@ -137,25 +200,24 @@ header{
     opacity: 0.8;
 }
 
-.menu{
+.menu {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
-.point{
+.point {
     margin: 1.2% 0.5%;
 }
 
-.point>img{
-    width:96%;
+.point > img {
+    width: 96%;
     border-radius: 3px;
 }
 
-.point>h3, .point>h3>a{
+.point > h3, .point > h3 > a {
     margin-top: 10px;
     margin-bottom: 8px;
     color: #232222;
@@ -163,18 +225,18 @@ header{
     font-size: 1em;
 }
 
-.point>h3>a:hover{
-    color:black;
+.point > h3 > a:hover {
+    color: black;
 }
 
-.point>div.price{
+.point > div.price {
     color: #626262;
     opacity: .5;
     font-size: 0.9em;
     margin-left: 4px;
 }
 
-.point>div.time{
+.point > div.time {
     font-size: 0.85em;
     padding-top: 8px;
     margin-left: 4px;
@@ -182,41 +244,41 @@ header{
 
 /*Footer*/
 
-footer{
+footer {
     margin-top: 8%;
     width: 100%;
     background-color: #262626;
 }
 
-.footer_logo{
+.footer_logo {
     width: 81%;
     letter-spacing: 0.2em;
     font-size: 1.65em;
     margin: 40px 0 40px 120px;
 }
 
-.footer_uber{
+.footer_uber {
     color: whitesmoke;
 }
 
-.footer_eats{
+.footer_eats {
     color: #57AD56;
 }
 
-.footer_line{
+.footer_line {
     width: 81%;
     border-bottom: 1px solid whitesmoke;
     margin: auto;
 }
 
-.footer_md_menu{
+.footer_md_menu {
     margin: 25px 0;
     width: 81%;
     display: flex;
     justify-content: space-between;
 }
 
-.lang_change{
+.lang_change {
     background-color: #414040;
     color: whitesmoke;
     font-size: 0.9em;
@@ -228,46 +290,46 @@ footer{
     border-radius: 3px;
 }
 
-.footer_first_col{
+.footer_first_col {
     font-size: 0.9em;
     color: whitesmoke;
     margin: 20px 0 40px 120px;
 }
 
-.footer_first_col>div>span{
+.footer_first_col > div > span {
     color: #57AD56;
 }
 
-.footer_first_col>.social_network>a>i{
+.footer_first_col > .social_network > a > i {
     color: whitesmoke;
     margin: 0 4px;
     font-size: 1.2em;
 }
 
-.footer_second_col>a>p{
+.footer_second_col > a > p {
     color: whitesmoke;
     font-size: 0.85em;
     margin-top: 30px;
 }
 
-.footer_third_col>a>p{
+.footer_third_col > a > p {
     color: whitesmoke;
     font-size: 0.85em;
     margin-top: 30px;
 }
 
-.download_links{
+.download_links {
     display: flex;
     justify-content: center;
 }
 
-.download_links>a>img{
+.download_links > a > img {
     margin: 50px 10px;
     width: 130px;
     height: 40px;
 }
 
-.footer_end{
+.footer_end {
     width: 81%;
     display: flex;
     justify-content: space-between;
@@ -276,53 +338,53 @@ footer{
     margin: 30px auto;
 }
 
-.footer_end>button{
+.footer_end > a > button {
     width: 80px;
     height: 80px;
     font-size: 1.4em;
     background-color: #57AD56;
-    border:none;
+    border: none;
     margin-top: -50px;
 }
 
-.footer_end>button>span{
+.footer_end > a > button > span {
     font-size: 3em;
 }
 
-@media (min-width: 545px) and (max-width: 860px){
+@media (min-width: 545px) and (max-width: 860px) {
     .footer_md_menu .footer_first_col,
     .footer_md_menu .footer_second_col,
-    .footer_md_menu .footer_third_col{
+    .footer_md_menu .footer_third_col {
         margin-left: 5%;
     }
 
-    .footer_md_menu .footer_first_col{
+    .footer_md_menu .footer_first_col {
         margin-left: 15%;
     }
 }
 
-@media (max-width: 545px){
+@media (max-width: 545px) {
 
-    .footer_logo{
+    .footer_logo {
         font-size: 1em;
         margin-left: 15%;
     }
 
-    .footer_md_menu{
+    .footer_md_menu {
         display: flex;
         flex-direction: column;
         margin-left: 15%;
     }
 
-    .footer_first_col{
-        margin-left:0;
+    .footer_first_col {
+        margin-left: 0;
     }
 
-    .lang_change{
+    .lang_change {
         width: 150px;
     }
 
-    .download_links{
+    .download_links {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -330,26 +392,26 @@ footer{
     }
 
 
-    .download_links>a>img{
+    .download_links > a > img {
         margin-top: 4%;
         margin-bottom: 4%;
     }
 
-    .footer_end{
+    .footer_end {
         flex-direction: column;
     }
 
-    .footer_end>p{
+    .footer_end > p {
         margin-top: 5%;
     }
 
-    .footer_end>button{
+    .footer_end > button {
         width: 70px;
         height: 70px;
         margin-left: 80%;
     }
 
-    .footer_end>button>span{
+    .footer_end > button > span {
         font-size: 2em;
     }
 }

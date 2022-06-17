@@ -17,13 +17,24 @@
 <body>
 <div class="wrapper">
     <div class="content">
-        <header>
+        <header id="top">
             <div class="logo">
                 <a href="index.html"><span class="uber">UBER</span><span class="eats">EATS</span></a>
             </div>
             <div class="header_login">
                 <a href="index.html"><input type="button" value="Войти"></a>
-                <a href="index.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="dropdown">
+                    <button onclick="basketDrop()" class="basket"><i class="fa-solid fa-bag-shopping basket"></i></button>
+                    <div id="myDropdown" class="dropdown-basket">
+                        <h3>Заказ</h3>
+                        <ul id="elem_in_order">
+                        </ul>
+                        <div id="clean_or_order" class="clean_or_order">
+                            <button onclick="basketClean()">Очистить</button>
+                            <button onclick="basketOrder()">Заказать</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -150,7 +161,7 @@
             <p>© 2017 Uber Technologies Inc.</p>
             <p>Обработка персональных данных</p>
             <p>Пользовательское соглашение</p>
-            <button><span>&#8593;</span></button>
+            <a href="#top"><button><span>&#8593;</span></button></a>
         </div>
     </footer>
 </div>
