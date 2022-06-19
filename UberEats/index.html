@@ -10,35 +10,35 @@
     <!--Стили-->
     <link rel="stylesheet" href="style/style.css">
     <!--JS-->
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e56bee619f.js" crossorigin="anonymous"></script>
     <title>UBER EATS</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="content">
-        <header id="top">
+        <header>
             <div class="logo">
                 <a href="index.html"><span class="uber">UBER</span><span class="eats">EATS</span></a>
             </div>
             <div class="header_login">
                 <a href="index.html"><input type="button" value="Войти"></a>
-                <div class="dropdown">
-                    <button onclick="basketDrop()" class="basket"><i class="fa-solid fa-bag-shopping basket"></i></button>
-                    <div id="myDropdown" class="dropdown-basket">
-                        <h3>Заказ</h3>
+                <div class="dropdown not-close-basket">
+                    <button onclick="basketDrop()" class="basket not-close-basket"><i class="fa-solid fa-bag-shopping not-close-basket"></i></button>
+                    <div id="myDropdown" class="dropdown-basket not-close-basket">
+                        <h3 class="not-close-basket">Заказ</h3>
                         <ul id="elem_in_order">
                         </ul>
-                        <div id="clean_or_order" class="clean_or_order">
-                            <button onclick="basketClean()">Очистить</button>
-                            <button onclick="basketOrder()">Заказать</button>
+                        <div id="clean_or_order" class="clean_or_order not-close-basket">
+                            <button class="not-close-basket" onclick="basketClean()">Очистить</button>
+                            <button class="not-close-basket" onclick="basketOrder()">Заказать</button>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <input class="search_title" type="search" value="Поиск по ресторанам и кухням">
+        <input class="search_title" type="search" placeholder="Поиск по ресторанам и кухням">
 
         <div class="rest_menu">
             <h2>Рестораны в Москве</h2>
@@ -161,7 +161,7 @@
             <p>© 2017 Uber Technologies Inc.</p>
             <p>Обработка персональных данных</p>
             <p>Пользовательское соглашение</p>
-            <a href="#top"><button><span>&#8593;</span></button></a>
+            <button onclick="toTop()" ><span>&#8593;</span></button>
         </div>
     </footer>
 </div>

@@ -104,9 +104,9 @@ header {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 275px;
-    min-height: 50px;
-    margin-left: -135px;
+    min-width: 400px;
+    min-height: 100px;
+    margin-left: -300px;
     margin-top: 20px;
     z-index: 1;
     border: 1px solid #57AD56;
@@ -119,7 +119,7 @@ header {
 }
 
 .dropdown-basket > h3 {
-    margin: 2px 0 2px 115px;
+    margin: 2px 0 2px 175px;
 }
 
 .dropdown-basket > ul {
@@ -131,10 +131,11 @@ header {
 .clean_or_order{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 15px;
     margin-bottom: 10px;
 }
+
 
 .clean_or_order>button{
     margin-right: 10px;
@@ -150,12 +151,21 @@ header {
     border: 1.5px solid #57AD56;
 }
 
+.del_cur_order{
+    margin-left: 10px;
+    width: 50px;
+    font-size: 0.8em;
+    border-radius: 6px;
+    border: 1.5px solid silver;
+}
+
+.del_cur_order:hover{
+    border: 1.5px solid #57AD56;
+}
+
 /*Media header*/
 
 @media (max-width: 735px) {
-    /*.header_login i {*/
-    /*    display: none;*/
-    /*}*/
 
     .header_login > a > input {
         float: right;
@@ -169,6 +179,16 @@ header {
         margin-right: -50px;
         margin-left: 5%;
         font-size: 1em;
+    }
+
+    .dropdown-basket {
+        min-width: 250px;
+        min-height: 100px;
+        margin-left: -120px;
+    }
+
+    .dropdown-basket > h3 {
+        margin: 2px 0 2px 108px;
     }
 }
 
@@ -338,7 +358,7 @@ footer {
     margin: 30px auto;
 }
 
-.footer_end > a > button {
+.footer_end > button {
     width: 80px;
     height: 80px;
     font-size: 1.4em;
@@ -347,7 +367,7 @@ footer {
     margin-top: -50px;
 }
 
-.footer_end > a > button > span {
+.footer_end > button > span {
     font-size: 3em;
 }
 
