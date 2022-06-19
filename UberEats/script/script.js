@@ -14,11 +14,17 @@ window.onclick = function(event) {
 }
 
 //Добавление продукта в корзину
-let count_el_in_order = -1;
 
 function addToOrder(text, num){
-    count_el_in_order++;
     let basket = document.getElementById("elem_in_order");
+    // Удаление текущего элемента из корзины
+    basket.onclick = function (event){
+        let target = event.target;
+        if (target.tagName === "BUTTON"){
+           target.parentNode.parentNode.remove();
+        }
+    }
+
     let order_div = document.createElement("div"); //div внутри li
     let curr_el = document.createElement("li"); // заказ добавленный в корзину
     let del_cur_order = document.createElement("button"); // кнопка удаления текущего элемента в заказе (внутри div)
@@ -27,7 +33,6 @@ function addToOrder(text, num){
     curr_el.classList.add("curr_el", "not-close-basket");
     del_cur_order.classList.add("del_cur_order", "not-close-basket");
     order_div.classList.add("not-close-basket");
-    del_cur_order.addEventListener("click", function(){delCurrOrder()}, false);
     order_div.insertAdjacentElement('beforeend', del_cur_order);
     order_div.style ="display: inline-block";
     curr_el.insertAdjacentElement('beforeend', order_div);
@@ -39,21 +44,12 @@ function addToOrder(text, num){
     }, 2000);
 }
 
-//Удаление текущего элемента из корзины
-
-// function delCurrOrder(event){
-//     let el = document.getElementsByClassName("curr_el");
-//
-//     el[n].remove();
-//     count_el_in_order--;
-// }
 
 //Удаление/Заказ блюд из корзины
 
 function basketClean(){
     let basket = document.getElementById("elem_in_order");
     basket.innerText = '';
-    count_el_in_order=-1;
 }
 
 function basketOrder(){
@@ -66,7 +62,6 @@ function basketOrder(){
     setTimeout(function (){
         basket.innerHTML="";
     }, 2000);
-    count_el_in_order=-1;
 }
 
 //Прокрутка вверх
