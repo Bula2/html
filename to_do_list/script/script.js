@@ -43,3 +43,11 @@ function addItem(){
 
     input.value="";
 }
+
+function changeBack(){
+    let back = document.body;
+    if (back.style.backgroundImage !== "url(\"../img/2.jpg\")")
+        back.style.backgroundImage = "url(\"../img/2.jpg\")";
+    else
+        back.style.backgroundImage = "linear-gradient(to right, #dc1a98, #01b7d7, #348cd5)";
+}
