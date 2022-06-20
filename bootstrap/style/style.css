@@ -1,0 +1,33 @@
+section{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../img/toleft.svg");
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/toright.svg");
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 80px;
+}
+
+.carousel-control-prev{
+    left: -65px;
+}
+
+.carousel-control-next{
+    right: -40px;
+}
+
+.my-carousel{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.card-img-top{
+    height: 250px;
+}
